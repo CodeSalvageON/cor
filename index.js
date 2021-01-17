@@ -1,1 +1,2 @@
-
+$("#rammstein").hide();
+$("#rammstein").click();
