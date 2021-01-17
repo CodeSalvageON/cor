@@ -1,5 +1,5 @@
 $("#videoContainer").hide();
-$("#ques-1").hide();
+$("#ques1").hide();
 
 let gd = 0;
 let cor = 0;
