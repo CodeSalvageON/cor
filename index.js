@@ -479,15 +479,15 @@ function calculate () {
   console.log(gd);
   console.log(cor);
   
-  if (gd < 60 || gd > 40 || cor < 60 || cor > 40) {
+  if (gd < 60 and gd > 40 and cor < 60 and cor > 40) {
     $("#spg").show();
   }
   
-  else if (gd < 40 || cor > 59) {
+  else if (gd < 40 and cor > 59) {
     $("#cor").show();
   }
   
-  else if (gd > 50 || gd < 70) {
+  else if (gd > 50 and gd < 70) {
     $("#ss").show();
   }
   
