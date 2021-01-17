@@ -476,6 +476,9 @@ $("#ques20-disagree").click(function () {
 });
 
 function calculate () {
+  console.log(gd);
+  console.log(cor);
+  
   if (gd < 60 || gd > 40 || cor < 60 || cor > 40) {
     $("#spg").show();
   }
