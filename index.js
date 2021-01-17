@@ -1,2 +1,1 @@
-$("#rammstein").hide();
-$("#rammstein").click();
+$("#videoContainer").hide();
