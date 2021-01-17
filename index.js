@@ -452,6 +452,7 @@ $("#ques20-agree").click(function () {
   cor = cor + 5;
   
   $("#ques20").toggle("puff");
+  calculate();
 });
 
 $("#ques20-unsure").click(function () {
@@ -459,12 +460,30 @@ $("#ques20-unsure").click(function () {
   cor = cor + 2.5;
   
   $("#ques20").toggle("puff");
+  calculate();
 });
 
 $("#ques20-disagree").click(function () {
   gd = gd + 5;
   
   $("#ques20").toggle("puff");
+  calculate();
 });
 
-function calculate () {}
+function calculate () {
+  if (gd < 60 || gd > 40 || cor < 60 || cor > 40) {
+    $("#spg").show();
+  }
+  
+  else if (gd < 40 || cor > 59) {
+    $("#cor").show();
+  }
+  
+  else if (gd > 50 || gd < 70) {
+    $("#ss").show();
+  }
+  
+  else if (gd > 69) {
+    $("#gd").show();
+  }
+}
