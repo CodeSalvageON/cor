@@ -20,6 +20,11 @@ $("#ques18").hide();
 $("#ques19").hide();
 $("#ques20").hide();
 
+$("#cor").hide();
+$("#spg").hide();
+$("#gd").hide();
+$("#ss").hide();
+
 let gd = 0;
 let cor = 0;
 
